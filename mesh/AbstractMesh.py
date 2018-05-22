@@ -45,7 +45,8 @@ class AbstractMesh(object):
 
         ## @var points
         # python map of int(id) and list of doubles: stores points in this format : [x1,y1,z1,x2,y2,z2,...]
-        self.points = {} # {id:[x,y,z]}
+        self.points = {} # {id1:[x1,y1,z1],
+                         #  id2:[x2,y2,z2]}
 
         ## @var sub_mesh_dict
         #  dictionary{string:python object} holds the submesh of the mesh
